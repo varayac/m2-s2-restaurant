@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./assets/img/n.png">
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-
+  UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous"> -->
+    <title>Nimrodel Pub Restaurant</title>
+</head>
+
+<body>
+    <nav>
+        <img src="./assets/img/n.png" alt="logo" height="320" width="320">
+        <div>
+            <ul>
+                <li>Nuestros Productos</li>
+                <li>Sobre Nosotros</li>
+                <li><a href="#contact-form">Comuniquemonos</a></li>
+                <li><a href="#reservation-form">Reserva</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <h1>Nimrodel Pub Restaurant</h1>
+    </header>
+    <main>
+        <header>
+            <h2>Destacados de la Semana</h2>
+        </header>
+        <section>
+            <article>
+                <img src="./assets/img/bebidas.jpg" height="300" width="450" alt="bebidas">
+                <h3>GASEOSAS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <img src="./assets/img/tablas.jpg" height="300" width="450" alt="bebidas">
+                <h3>TABLAS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+            <article>
+                <img src="./assets/img/shop.jpeg" height="300" width="450" alt="bebidas">
+                <h3>SHOP CERVEZAS</h3>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </article>
+        </section>
+        <section id="contact-form">
+            <h2>Comuniquemonos</h2>
+            <form action="" method="post">
+                <div>
+                    <label for="nameCom">Nombre</label>
+                    <input type="text" name="nameCom" id="nameCom" pattern="[a-zA-Z ]{2,30}$" required
+                        placeholder="Maria Vargas">
+                </div><br>
+                <div>
+                    <label for="emailCom">Correo</label>
+                    <input type="email" name="emailCom" id="emailCom" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,30}$" required
+                        placeholder="mariavargas@correo.com">
+                </div><br>
+                <div>
+                    <label for="phoneCom">Telefono</label>
+                    <input type="tel" name="phoneCom" id="phoneCom" pattern="[0-9]{9}" required placeholder="951236874">
+                </div><br>
+                <div>
+                    <label for="reason">Motivo</label>
+                    <input type="text" name="reason" list="reasonList" id="reason" pattern="[a-zA-Z ]{4,20}$" required>
+                    <datalist id="reasonList">
+                        <option value="FELICITACIONES" selected></option>
+                        <option value="RECLAMOS"></option>
+                        <option value="CONSULTAS"></option>
+                        <option value="SUGERENCIAS"></option>
+                    </datalist><br>
+                </div><br>
+                <div>
+                    <textarea name="reason" id="reasonTextarea" placeholder="..." cols="35" rows="10" required
+                        pattern="[a-zA-Z0-9àáâäãåąčćęèéêëėįìíîïłńòóôöõøùúûüųūÿýżźñçčšžÀÁÂÄÃÅĄĆČĖĘÈÉÊËÌÍÎÏĮŁŃÒÓÔÖÕØÙÚÛÜŲŪŸÝŻŹÑßÇŒÆČŠŽ∂ð@ ,.'-]{10,200}$"></textarea>
+                </div><br>
+                <div>
+                    <button>Enviar</button>
+                </div>
+            </form>
+        </section><br>
+        <section id="reservation-form">
+            <h2>Reserva</h2>
+            <form action="" method="post">
+                <div>
+                    <label for="name">Nombre</label>
+                    <input type="text" name="name" id="name" pattern="[a-zA-Z ]{2,30}$" required
+                        placeholder="xxx xxxxx">
+                </div><br>
+                <div>
+                    <label for="email">Correo</label>
+                    <input type="email" name="email" id="email" pattern="^[^@]+@[^@]+\.[a-zA-Z]{2,30}$" required
+                        placeholder="xxx@xxx.xx">
+                </div><br>
+                <div>
+                    <label for="phone">Telefono</label>
+                    <input type="tel" name="phone" id="phone" pattern="[0-9]{9}" required placeholder="xxxxxxxxx">
+                </div><br>
+                <div>
+                    <label for="date">Fecha</label>
+                    <input type="date" name="date" id="date" required>
+                </div><br>
+                <div>
+                    <label for="time">Hora</label>
+                    <input type="time" name="time" id="time" required>
+                </div><br>
+                <div>
+                    <label for="assistants">Cantidad de Asistentes</label>
+                    <input type="text" name="assistants" id="assistants" pattern="[0-9]{1,100}" required>
+                </div><br>
+                <div>
+                    <button>Reservar</button>
+                </div>
+            </form>
+        </section>
+    </main><br>
+    <footer>
+        <P>Todos los derechos reservados &reg; <!-- <i class="fa-light fa-registered"></i> --></P>
+    </footer>
+</body>
+
+</html>
+
+<!-- NOTA: FontAwesome pide registrarse para utilizar iconos... El punto es que entiendo como implementar iconos -->
